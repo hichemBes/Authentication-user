@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ed9aade8-a513-42ce-899b-1f76be2ef0ea": {
+      "ProjectGuid": "ed9aade8-a513-42ce-899b-1f76be2ef0ea",
+      "DisplayName": "Apii",
+      "ColorIndex": 0
+    },
+    "514c31dd-1bd8-4c8d-b324-ea4c8c01f7ae": {
+      "ProjectGuid": "514c31dd-1bd8-4c8d-b324-ea4c8c01f7ae",
+      "DisplayName": "Core",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

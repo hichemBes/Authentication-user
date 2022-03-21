@@ -1,0 +1,13 @@
+C:\Users\hichem\Desktop\auth-hichem\Core\bin\Debug\netcoreapp3.1\Core.deps.json
+C:\Users\hichem\Desktop\auth-hichem\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.json
+C:\Users\hichem\Desktop\auth-hichem\Core\bin\Debug\netcoreapp3.1\Core.runtimeconfig.dev.json
+C:\Users\hichem\Desktop\auth-hichem\Core\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\hichem\Desktop\auth-hichem\Core\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.dll
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.pdb
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.genruntimeconfig.cache
+C:\Users\hichem\Desktop\auth-hichem\Core\obj\Debug\netcoreapp3.1\Core.csproj.AssemblyReference.cache
