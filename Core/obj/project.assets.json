@@ -6422,11 +6422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\hichem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\obj\\",
+      "outputPath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hichem\\AppData\\Roaming\\NuGet\\NuGet.Config",

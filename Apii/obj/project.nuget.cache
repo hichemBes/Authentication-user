@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NHQgniP+n82YeDdBhwa5WmztYUZdJh6CkpQou97Av8bd2ciiUW99ne6ZYtaaPlPxByAU/9ZDxjjRrN/tutFyKQ==",
+  "dgSpecHash": "ZqfepvuSU7gUTek7gj1KG5+GAL0NfJ19q/bEuB6oXFzCBmakPxfEKyhz+Pr9DoEFCtiIYIWs62KMXkwJt5M1Lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Apii\\Apii.csproj",
+  "projectFilePath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Apii\\Apii.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hichem\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\hichem\\.nuget\\packages\\fluentvalidation\\8.6.1\\fluentvalidation.8.6.1.nupkg.sha512",
-    "C:\\Users\\hichem\\.nuget\\packages\\mailjet.api\\2.0.2\\mailjet.api.2.0.2.nupkg.sha512",
     "C:\\Users\\hichem\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\hichem\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",
     "C:\\Users\\hichem\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

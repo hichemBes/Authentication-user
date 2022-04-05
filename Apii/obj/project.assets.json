@@ -36,19 +36,6 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "Mailjet.Api/2.0.2": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netstandard1.1/Mailjet.Client.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/Mailjet.Client.dll": {}
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "type": "package",
         "dependencies": {
@@ -2727,19 +2714,6 @@
         "lib/netstandard1.6/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml"
-      ]
-    },
-    "Mailjet.Api/2.0.2": {
-      "sha512": "FEHae1kk903JhRounybEA6kSbOB87jk8kiBLrh2iPdtP/Qp25mT3EdzgBwZKzISsz3M8nyJcB8M8ygVzE/87MQ==",
-      "type": "package",
-      "path": "mailjet.api/2.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Mailjet.Client.dll",
-        "lib/netstandard1.1/Mailjet.Client.dll",
-        "mailjet.api.2.0.2.nupkg.sha512",
-        "mailjet.api.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.7": {
@@ -8668,7 +8642,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Core >= 1.0.0",
-      "Mailjet.Api >= 2.0.2",
       "Microsoft.AspNet.WebApi.Core >= 5.2.7",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.0",
       "Microsoft.EntityFrameworkCore >= 3.1.0",
@@ -8690,11 +8663,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Apii\\Apii.csproj",
+      "projectUniqueName": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Apii\\Apii.csproj",
       "projectName": "Apii",
-      "projectPath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Apii\\Apii.csproj",
+      "projectPath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Apii\\Apii.csproj",
       "packagesPath": "C:\\Users\\hichem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Apii\\obj\\",
+      "outputPath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Apii\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hichem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8711,8 +8684,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\Core.csproj"
+            "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\Core.csproj"
             }
           }
         }
@@ -8727,10 +8700,6 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "Mailjet.Api": {
-            "target": "Package",
-            "version": "[2.0.2, )"
-          },
           "Microsoft.AspNet.WebApi.Core": {
             "target": "Package",
             "version": "[5.2.7, )"

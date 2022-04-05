@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j8+pPDswbZTCArvQnXQHulMQwmzMDCiRl7GH/zG654Z02PU/bEIT3QaJPOpK+9KMuqnyKD3SBKUMM1HHYuoAUg==",
+  "dgSpecHash": "Vq/7wrbaUNRiv3sIYbT1o6nimhLsvzqHshIR3rzCFG6F6llYeo3vxe8qDCNc+0Y6ZVPzMRdTpSH6gcECYHQN6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hichem\\Desktop\\auth-hichem\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\hichem\\Desktop\\all\\auth-hichem\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hichem\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\hichem\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

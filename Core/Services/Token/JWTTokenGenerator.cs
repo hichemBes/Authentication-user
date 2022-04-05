@@ -23,7 +23,7 @@ namespace Core.Services.Token
 
             claims.Add(new Claim(Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.GivenName, user.UserName));
             claims.Add(new Claim(Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.Email, user.Email));
-	
+			claims.Add(new Claim(Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames.NameId ,user.Id));
 			//var claims = new List<Claim>
 			// {
 			//     new Claim(JwtRegisteredClaimNames.GivenName , user.UserName),
@@ -40,7 +40,7 @@ namespace Core.Services.Token
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddMinutes(20),
+                Expires = DateTime.Now.AddHours(1),
                 SigningCredentials = creds,
                 Issuer = _config["Token:Issuer"],
             };

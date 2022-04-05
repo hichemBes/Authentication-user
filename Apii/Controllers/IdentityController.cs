@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -88,16 +89,23 @@ namespace API.Controllers
 			var res =_roleManager.Roles.ToList();
 			return res;
 		}
-        [HttpGet("getfilliale")]
+        [HttpGet("getrolesofuser")]
+       public  async Task<List<string>> GetUserRoles (string Username)
+        {
+			var userFromDb = await _userManager.FindByNameAsync(Username);
+			return new List<string>(await _userManager.GetRolesAsync(userFromDb));
+        }
+		
+		[HttpGet("getfilliale")]
         public async Task<IActionResult> getfilliale(string Username)
         {
 			var userFromDb = await _userManager.FindByNameAsync(Username);
 			string f = userFromDb.filliale;
 			return Ok(f);
 		}
+		//[HttpGet("getfil")]
 
-
-        [Authorize(Roles = "Admin")]
+		[Authorize(Roles = "Admin")]
         [HttpPost("addRole")]
 		public async Task<IActionResult> add(RolesUser model)
         {
@@ -106,13 +114,21 @@ namespace API.Controllers
 				await _roleManager.CreateAsync(new IdentityRole(model.Role));
 				
 			}
+			
 			var userFromDb = await _userManager.FindByNameAsync(model.Username);
 			var result =await _userManager.AddToRoleAsync(userFromDb, model.Role);
 			
 			return Ok(result);
+		} 
+	
+		[HttpGet]
+		public Task<User> MyAction(string userId)
+		{
+			var user =  _userManager.FindByIdAsync(userId);
+			return user;
 		}
 
-		[HttpPost("register")]
+			[HttpPost("register")]
 		public async Task<IActionResult> Register(RegisterModel model)
 		{
 
