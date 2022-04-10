@@ -90,9 +90,9 @@ namespace API.Controllers
 			return res;
 		}
         [HttpGet("getrolesofuser")]
-       public  async Task<List<string>> GetUserRoles (string Username)
+       public  async Task<List<string>> GetUserRoles (string username)
         {
-			var userFromDb = await _userManager.FindByNameAsync(Username);
+			var userFromDb = await _userManager.FindByNameAsync(username);
 			return new List<string>(await _userManager.GetRolesAsync(userFromDb));
         }
 		
@@ -119,8 +119,61 @@ namespace API.Controllers
 			var result =await _userManager.AddToRoleAsync(userFromDb, model.Role);
 			
 			return Ok(result);
-		} 
-	
+		}
+
+		
+		[HttpDelete("Deleteuser")]
+		public async Task<IActionResult> DeleteAsync(string id)
+		{
+			Console.WriteLine("Deleting user: " + id);
+			try
+			{
+				var user = await _userManager.FindByIdAsync(id);
+
+				if (user == null)
+                {
+					return BadRequest("No user");
+                }
+
+					await _userManager.DeleteAsync(user);
+				return Ok();
+			}
+			catch (Exception e)
+			{
+				return BadRequest(e.Message);
+			}
+		}
+
+		[HttpDelete("DeleteuserRole")]
+
+		public async Task<ActionResult> Delete(string UserName, string RoleName)
+		{
+
+			var userFromDb = await _userManager.FindByNameAsync(UserName);
+			var rolebd = await _roleManager.FindByNameAsync(RoleName);
+            if (rolebd == null)
+            {
+				return BadRequest("error");
+            }
+			var d =rolebd.ToString();
+          
+			if (await _userManager.IsInRoleAsync(userFromDb, RoleName))
+			{
+				await _userManager.RemoveFromRoleAsync(userFromDb, RoleName);
+
+				return Ok("sucsses");
+			}
+            else
+            {
+				return BadRequest("damm");
+            }
+
+
+
+
+
+			}
+
 		[HttpGet]
 		public Task<User> MyAction(string userId)
 		{
